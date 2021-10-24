@@ -32,6 +32,7 @@
   <button class="say-hi-button"></button>
 </div>
   
+  
   <script>
     window.onload = function () {
       document
@@ -41,7 +42,7 @@
           // changing your 3D model source, size, position and so on
           // or you can just open links, trigger actions...
           document.querySelector(".box");
-          
+           document.querySelector(".say-hi-button").style.innerHTML = document.querySelector(".box").getAttribute('position').toString();
           alert(document.querySelector(".box").getAttribute('position').toString());
         });
     };
