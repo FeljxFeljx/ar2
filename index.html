@@ -76,7 +76,8 @@
         });
     };
     
-    var marker = document.querySelector('.anchor');
+    var marker = document.querySelector('.anchor').object3D;
+    console.log(marker);
     marker.addEventListener("markerFound", (e)=>{
          var p = document.querySelector('.box').object3D;
          p.visible = "true";
