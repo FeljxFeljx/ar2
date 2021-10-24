@@ -27,18 +27,24 @@
     <a-marker-camera type='pattern' url='pattern-rdm.patt'></a-marker-camera>
   </a-scene>
   
-  <script>
-    AFRAME.registerComponent('clickhandler', {
-        init: function() {
-            this.el.addEventListener('click', () => {
-                alert('Clicked!')
-            });
-    }});
-</script>
-  
   <div class="buttons">
   <button class="say-hi-button"></button>
 </div>
+  
+  <script>
+    window.onload = function () {
+      document
+        .querySelector(".say-hi-button")
+        .addEventListener("click", function () {
+          // here you can change also a-scene or a-entity properties, like
+          // changing your 3D model source, size, position and so on
+          // or you can just open links, trigger actions...
+          alert("Hi there!");
+        });
+    };
+  </script>
+  
+  
   
   <style>
     button{
