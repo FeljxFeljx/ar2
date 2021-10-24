@@ -25,4 +25,13 @@
     
     <a-marker-camera type='pattern' url='pattern-rdm.patt'></a-marker-camera>
   </a-scene>
+  
+  <script>
+    AFRAME.registerComponent('clickhandler', {
+        init: function() {
+            this.el.addEventListener('click', () => {
+                alert('Clicked!')
+            });
+    }});
+</script>
 </body>
