@@ -42,7 +42,7 @@
           // changing your 3D model source, size, position and so on
           // or you can just open links, trigger actions...
         var p = document.querySelector('.box').object3D;
-        var t = document.createTextNode(p);
+        var t = document.createTextNode(p.position.x));
         document.querySelector(".say-hi-button").appendChild(t);
         console.log(p);
         console.log(p.position);
